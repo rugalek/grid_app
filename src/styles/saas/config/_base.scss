@@ -2,23 +2,34 @@
 .app{
 
 max-width: 1280px;
-height: 98vh;
+height: 880px;
 margin: 0 auto;
 border-radius: 20px;
 display: grid;
-grid-template-areas: 
-"nav header header header"  
-"nav card card card"  
-"nav graphic graphic gistogram"
-"nav diagram diagram geo"
-                        ;
-                        
-grid-template-rows:  15% 25% 25% 25%;
-grid-template-columns: 15% 26% 26% 26%;
-grid-gap: 3%;
+
 
 background-color:#EFF3F9;
+}
 
-.card{
+.wrapper{
+    display: grid;
+    height: 880px;
+    max-width: 1280px;
+    margin: 0 auto;
+   
+    grid-template-columns: 98px 1fr;
+    grid-template-areas: "nav main";
 
+    background-color:#962222;
+}
+.main{
+    display: grid;
+    grid-area: main;
+    grid-template-rows: repeat(3,137px);
+    grid-template-columns: repeat(3,341px);
+    grid-template-areas: 
+    "header header header"
+    "card card card"
+    "graphic graphic gistogram"
+    "diagram diagram geo";
 }

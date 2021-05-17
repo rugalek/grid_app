@@ -1,7 +1,11 @@
 .card{
-    
+    display: grid;
     grid-area: card;
     border: 3px solid black;
     background-color: yellow;
-    
+    grid-column: span 3;
+    grid-row: span 3;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+
 }
