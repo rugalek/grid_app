@@ -5,68 +5,196 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles/css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
-    <div class="app">    
-        <nav class="nav">
-          <a href="#" class="nav__logo-link">
-            <img class="nav__logo" src="src/images/logos/vk.png" alt="vk" />
-          </a>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                <img class="nav-img" src="src/images/icons/home.svg" alt="home" />
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                <img class="nav-img" src="src/images/icons/list.svg" alt="list"  />
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                <img class="nav-img" src="src/images/icons/friends.svg" alt="friends" />
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                <img class="nav-img" src="src/images/icons/mail.svg" alt="mail" />
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                <img class="nav-img" src="src/images/icons/play.svg" alt="play"  />
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                <img class="nav-img" src="src/images/icons/statistic.svg" alt="statistic" />
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                <img class="nav-img" src="src/images/icons/settings.svg" alt="settings" />
-              </a>
-            </li>
-          </ul>
-          <img class="checkbox" src="src/images/icons/tumbler.png" alt="tumbler" />
-        </nav>
-        <main class="content">
-          <header class="headerbar">
-            <h1 class="header_name">Statistics</h1>
-            
-          </header>
-            <div class="card">Card</div>
-            <div class="card">Card</div>
-            <div class="card">Card</div>
-            <div class="graphic">Graphic</div>
-            <div class="gistogram">Gistogram</div>
-            <div class="diagram">Diagram</div>
-            <div class="geo">Geo</div>
-          
-        </main>
-      
+    <div class="app">
+      <nav class="nav">
+        <a href="#" class="nav__logo-link">
+          <img class="nav__logo" src="src/images/logos/vk.png" alt="vk" />
+        </a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img class="nav-img" src="src/images/icons/home.svg" alt="home" />
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img class="nav-img" src="src/images/icons/list.svg" alt="list" />
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img
+                class="nav-img"
+                src="src/images/icons/friends.svg"
+                alt="friends"
+              />
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img class="nav-img" src="src/images/icons/mail.svg" alt="mail" />
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img class="nav-img" src="src/images/icons/play.svg" alt="play" />
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img
+                class="nav-img"
+                src="src/images/icons/statistic.svg"
+                alt="statistic"
+              />
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img
+                class="nav-img"
+                src="src/images/icons/settings.svg"
+                alt="settings"
+              />
+            </a>
+          </li>
+        </ul>
+        <img
+          class="checkbox"
+          src="src/images/icons/tumbler.png"
+          alt="tumbler"
+        />
+      </nav>
+      <main class="content">
+        <header class="headerbar">
+          <h1 class="header_name">Statistics</h1>
+          <form class="header__search">
+            <button class="search__btn" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+            <input class="search__text" type="text" placeholder="Search" />
+          </form>
+          <img
+            class="notification"
+            src="src/images/icons/bell.png"
+            alt="notification"
+          />
+          <h3 class="username">Anya</h3>
+          <img class="avatar" src="src/images/icons/girl.png" alt="avatar" />
+        </header>
+
+        <div class="card">
+          <div class="card__header">
+            <h2 class="card__title">Friends</h2>
+            <img
+              class="card__menu"
+              src="src/images/icons/menu_dots.png"
+              alt="menu"
+            />
+          </div>
+          <div class="card__numbers">
+            <h4 class="card__count">271 people</h4>
+            <p class="card__percent">+0.7%</p>
+            <img
+              class="card__arrow"
+              src="src/images/icons/arrow_up.png"
+              alt="arrow"
+            />
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__header">
+            <h2 class="card__title">Unique visitors</h2>
+            <img
+              class="card__menu"
+              src="src/images/icons/menu_dots.png"
+              alt="menu"
+            />
+          </div>
+          <div class="card__numbers">
+            <h4 class="card__count">69 people</h4>
+            <p class="card__percent">-1,7%</p>
+            <img
+              class="card__arrow"
+              src="src/images/icons/arrow_down.png"
+              alt="arrow"
+            />
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__header">
+            <h2 class="card__title">Followers</h2>
+            <img
+              class="card__menu"
+              src="src/images/icons/menu_dots.png"
+              alt="menu"
+            />
+          </div>
+          <div class="card__numbers">
+            <h4 class="card__count">288 people</h4>
+            <p class="card__percent">+1%</p>
+            <img
+              class="card__arrow"
+              src="src/images/icons/arrow_up.png"
+              alt="arrow"
+            />
+          </div>
+        </div>
+
+        <div class="graphic">
+          <div class="graphic__header">
+            <h2 class="graphic__title">Audience reach</h2>
+            <div class="graphic__subtitle">
+              <p class="graphic__date">31/01/2020 – 06/02/2020</p>
+              <img
+                class="graphic__arrow"
+                src="src/images/content/arrow_down_little.png "
+                alt="arrow"
+              />
+            </div>
+
+            <div class="graphic__checkboxes">
+              <img
+                class="graphic__checkbox"
+                src="src/images/content/characteristics.png"
+                alt="checkbox"
+              />
+            </div>
+          </div>
+            <img
+              class="graphic__view"
+              src="src/images/content/graphic.png"
+              alt="graphic"
+            />
+        </div>
+        <div class="gistogram">
+          <h2 class="gistogram__title">Reach by device</h2>
+          <img class="gistogram__view" src="src/images/content/ellipse.png" alt="gistogram" >
+          <div class="gisogram__checkbox">
+            <img class="gistogram__desktop" src="src/images/content/point_desktop.png" alt="desktop-checkbox">
+            <img class="gistogram__mobile" src="src/images/content/point_mobile.png" alt="mobile-checkbox">
+          </div>
+
+
+
+
+
+
+        </div>
+
+        <div class="diagram">Diagram</div>
+        <div class="geo">Geo</div>
+      </main>
     </div>
   </body>
 </html>
