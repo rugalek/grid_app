@@ -1,0 +1,10 @@
+.card{
+    display: grid;
+    grid-area: card;
+    
+    background-color: yellow;
+    grid-column: span 1;
+   
+    border-radius: 13px;
+
+}

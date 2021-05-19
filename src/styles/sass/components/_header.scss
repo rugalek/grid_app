@@ -1,0 +1,15 @@
+.headerbar{
+    display: flex;
+    grid-area: headerbar;
+    background-color: tomato;
+    border-radius: 13px;
+    align-items: center;
+    
+
+}
+.header__name{
+font-family: Gilroy;
+font-weight: bold;
+font-size: 30px;
+line-height: 36px;
+}
