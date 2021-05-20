@@ -1,7 +1,49 @@
 .graphic{
     grid-area: graphic;
-  
-    background-color: indigo;
+    display: flex;
+    flex-direction: column;
+    padding: 27px 28px 22px 24px;
+    background-color: #FDFDFF;
     
     border-radius: 13px;
+}
+.graphic__header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Khula', sans-serif;
+
+}
+.graphic__title{
+  
+    
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+}
+.graphic__subtitle{
+    display: flex;
+    flex-direction: row;
+    padding-left: 190px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+}
+
+.graphic__checkbox{
+    width: 135px;
+    height: 16px;
+}
+.graphic__arrow{
+    width: 7px;
+    height: 4px;
+    align-self: center; 
+    padding-left: 3px; 
+}
+.graphic__view{
+ 
+    padding-top: 25px;
 }

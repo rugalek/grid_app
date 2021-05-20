@@ -1,15 +1,56 @@
 .headerbar{
+
     display: flex;
     grid-area: headerbar;
-    background-color: tomato;
-    border-radius: 13px;
+
     align-items: center;
-    
+    color: #4F4F4F;
+}
+.header_name{
+
+    font-family: 'Khula', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+}
+.header__search{
+
+    display: flex;
+    width: 163px;
+    height: 32px;
+    background-color: #FDFDFF;
+    border: 1px solid #EBEBEB;
+    border-radius: 13px;
+    margin-left: 45px;
+ 
 
 }
-.header__name{
-font-family: Gilroy;
-font-weight: bold;
-font-size: 30px;
-line-height: 36px;
+
+.search__text{
+    width: 155px;
+    background: none;
+    border: none;
+    
+}
+.notification{
+    
+    margin-left: 14px;
+
+}
+.notification:hover {
+
+    animation: notification 0.2s 2;
+}
+
+.username{
+
+margin-left: 573px;
+font-family: 'Khula', sans-serif;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+
+}
+.avatar{
+margin-left: 11px;
 }

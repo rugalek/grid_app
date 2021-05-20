@@ -7,11 +7,12 @@ max-width: 1280px;
 height: 880px;
 margin: 50px 5px;
 border-radius: 20px;
-
+font-family: 'Khula', sans-serif;
 background-color:#EFF3F9;
 }
 
 .content{
+
     display: grid;
     grid-area: content;
     grid-template-rows: 50px 150px 240px 240px;
