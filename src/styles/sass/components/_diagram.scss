@@ -1,7 +1,34 @@
 .diagram{
+
     grid-area: diagram;
-    
     background-color: #FDFDFF;
-  
     border-radius: 13px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 1fr;
+    grid-gap: 21px;
+    padding: 23px;
+    
+
+    &__title{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    }
+
+    &__checkboxes{
+
+        display: flex;
+        flex-direction: row;
+        margin-right: 41px;
+
+
+    }
+
+    &__view{
+        display: grid;
+        grid-column: span 2;
+    }
+
+
 }
