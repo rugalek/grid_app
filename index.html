@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles/css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap"
@@ -78,7 +82,7 @@
           <h1 class="header_name">Statistics</h1>
           <form class="header__search">
             <button class="search__btn" type="submit">
-              <i class="fa fa-search"></i>
+              <i class="fa fa-search" aria-hidden="true"></i>
             </button>
             <input class="search__text" type="text" placeholder="Search" />
           </form>
@@ -189,13 +193,24 @@
         <div class="diagram">
           <h2 class="diagram__title">Gender / Age</h2>
           <div class="diagram__checkboxes">
-            <p class="diagram__checkbox--women">women</p>
-            <p class="diagram__checkbox--men">men</p>
+            <img class="diagram__women" src="src/images/icons/checkbox-woman.png" alt="women" >
+            <p class="diagram__checkbox">women</p>
+            <img class="diagram__men" src="src/images/icons/checkbox-man.png" alt="men" >
+            <p class="diagram__checkbox">men</p>
           </div>
           <img class="diagram_view" src="src/images/content/diagram.png" alt="diagram" >
         </div>
 
-        <div class="geo">Geo</div>
+        <div class="geo">
+          <h2 class="geo__title">Geo</h2>
+          <h5 class="geo__subtitle">Country <span class="geo__subtitle--light">City</span></h5>
+          <img class="geo__russia" src="src/images/content/russia.png" alt="russia" >
+          <img class="geo__ukraine" src="src/images/content/ukraine.png" alt="ukraine" >
+          <img class="geo__mongolia" src="src/images/content/mongolia.png"  alt="mongolia" >
+          <img class="geo__china" src="src/images/content/china.png" alt="china" >
+          <img class="geo__usa" src="src/images/content/usa.png" alt="usa" >
+          <img class="geo__other"src="src/images/content/other.png" alt="other" >
+          </div>
       </main>
     </div>
   </body>

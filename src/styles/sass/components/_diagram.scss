@@ -4,31 +4,58 @@
     background-color: #FDFDFF;
     border-radius: 13px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 337px 1fr;
     grid-template-rows: 30px 1fr;
     grid-gap: 21px;
     padding: 23px;
-    
+    min-width: 674px;
+    grid-template-areas: 
+    'diagram__title diagram__checkboxes'
+    'diagram__view diagram__view'
+    ;
+
 
     &__title{
+    grid-area: diagram__title;
+
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
     }
 
     &__checkboxes{
-
+        grid-area: diagram__checkboxes;
         display: flex;
         flex-direction: row;
-        margin-right: 41px;
+        justify-self: end;
+        justify-content: center;
+        margin-right: 40px;
+        
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
 
 
     }
 
     &__view{
+        grid-area: diagram__view;
         display: grid;
-        grid-column: span 2;
+        grid-row: span 2;
     }
 
+    &__women{
+        margin:0px 5px;
+        width: 16px;
+        height: 16px;
+    }
+    &__men{
+        margin:0px 5px;
+        width: 16px;
+        height: 16px;
+    }
+    &__checkbox{
+        margin-top:3px;
+    }
 
 }

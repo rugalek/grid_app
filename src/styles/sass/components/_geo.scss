@@ -1,7 +1,64 @@
 .geo{
     grid-area: geo;
-   
     background-color: #FDFDFF;
-   
     border-radius: 13px;
+    display: grid;
+    grid-template-columns: 130px 0px 130px;
+    grid-template-rows: 30px repeat(3,32px);
+    grid-gap: 20px;
+    padding: 20px;
+    grid-template-areas: 
+    
+    'title . subtitle '
+    'russia . china '
+    'ukraine . usa'
+    'mongolia . other'
+    ;
+
+    &__title{
+        grid-area: title;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #4F4F4F;
+    }
+    &__subtitle{
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        color: #4F4F4F;
+        grid-area: subtitle;
+        justify-self: end;
+        &--light{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            color: #979797;
+            grid-area: subtitle-light;
+        
+        }
+    }
+
+    &__russia{
+        grid-area: russia;
+
+    }
+    &__ukraine{
+        grid-area: ukraine;
+    }
+    &__mongolia{
+        grid-area: mongolia;
+    }
+    &__china{
+        grid-area: china;
+    }
+    &__usa{
+        grid-area: usa;
+    }
+    &__other{
+        grid-area: other;
+    }
+
+
+
 }
