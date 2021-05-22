@@ -1,0 +1,44 @@
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) { 
+
+    .content {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 148px) repeat(3,242px) 1fr;
+        grid-template-areas:
+        'headerbar'
+        'card'
+        'card'
+        'card'
+        'graphic'
+        'gistogram'
+        'diagram'
+        'geo'
+        ;
+        grid-gap: 10px;
+        padding: 2px;
+        align-items: center;
+        
+        
+        
+        ;
+    }
+    .nav{
+        display: none;
+    }
+    .card,
+    .graphic,
+    .gistogram,
+    .diagram,
+    .geo {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .card{
+        width:242px;
+    }
+    .hederbar{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+}
