@@ -39,8 +39,10 @@
 
 }
 
-.username{
-
+.header__user{
+display: flex;
+flex-direction: row;
+align-items: center;
 margin-left: 573px;
 font-family: 'Khula', sans-serif;
 font-weight: 600;

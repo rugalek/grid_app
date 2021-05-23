@@ -1,13 +1,15 @@
 .nav{
     display: grid;
     grid-area: nav;
-    
+    position: relative;
+    z-index: 1;
     width: 98px;
     background-color: #FDFDFF;
     top: 0px;
-    left: 0px;
+    margin-left: 0px;
+    
     justify-content: center;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 430px 1fr;
 
 }
 .nav__list{

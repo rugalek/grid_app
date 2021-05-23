@@ -1,19 +1,16 @@
 .card{
     display: grid;
     grid-area: card;
-
-    background-color: #FDFDFF;
     grid-column: span 1;
-
     grid-gap:32px;
-
-    width: 100%;
     padding: 22px;
     border-radius: 13px;
     font-family: 'Khula', sans-serif;
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
+    
+    background-color: #FDFDFF;
     color: #4F4F4F;
 }
 .card__header{
