@@ -1,4 +1,4 @@
-.geo{
+.geo {
     grid-area: geo;
     background-color: #FDFDFF;
     border-radius: 13px;
@@ -15,14 +15,14 @@
     'mongolia . other'
     ;
 
-    &__title{
+    &__title {
         grid-area: title;
         font-weight: bold;
         font-size: 20px;
         line-height: 24px;
         color: #4F4F4F;
     }
-    &__subtitle{
+    &__subtitle {
         font-weight: 600;
         font-size: 12px;
         line-height: 14px;
@@ -35,30 +35,25 @@
             line-height: 14px;
             color: #979797;
             grid-area: subtitle-light;
-        
         }
     }
 
-    &__russia{
+    &__russia {
         grid-area: russia;
-
     }
-    &__ukraine{
+    &__ukraine {
         grid-area: ukraine;
     }
-    &__mongolia{
+    &__mongolia {
         grid-area: mongolia;
     }
-    &__china{
+    &__china {
         grid-area: china;
     }
-    &__usa{
+    &__usa {
         grid-area: usa;
     }
-    &__other{
+    &__other {
         grid-area: other;
     }
-
-
-
 }

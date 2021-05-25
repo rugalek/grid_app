@@ -1,4 +1,4 @@
-.card{
+.card {
     display: grid;
     grid-area: card;
     grid-column: span 1;
@@ -12,43 +12,38 @@
     
     background-color: #FDFDFF;
     color: #4F4F4F;
-}
-.card__header{
 
+    &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    }
+    &_menu {
+        height: 5px;
+        width: 26px;
+    }
+    &__numbers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__count {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+    }
 
-}
-.card__menu{
-    
-    height: 5px;
-    width: 26px;
-   
-    
-}
-.card__numbers{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.card__count{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-}
+    &__percent {
 
-.card__percent{
-
-    padding-left: 99px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    color: #979797;
-}
-.card__arrow{
-    width: 11px;
-    height: 12px;
-  
+        padding-left: 99px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #979797;
+    }
+    &__arrow {
+        width: 11px;
+        height: 12px;
+    
+    }
 }

@@ -1,10 +1,10 @@
-.diagram{
+.diagram {
 
     grid-area: diagram;
     background-color: #FDFDFF;
     border-radius: 13px;
     display: grid;
-    grid-template-columns: 337px 1fr;
+    grid-template-columns: minmax(337px,1fr) 1fr; 
     grid-template-rows: 30px 1fr;
     grid-gap: 21px;
     padding: 23px;
@@ -14,10 +14,8 @@
     'diagram__view diagram__view'
     ;
 
-
     &__title{
     grid-area: diagram__title;
-
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
@@ -30,12 +28,9 @@
         justify-self: end;
         justify-content: center;
         margin-right: 40px;
-        
         font-weight: 600;
         font-size: 12px;
         line-height: 14px;
-
-
     }
 
     &__view{

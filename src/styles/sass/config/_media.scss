@@ -9,7 +9,7 @@
 
 
 
-@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) { 
+@media only screen and (max-width: 768px) { 
 
     .app {
         grid-template-areas: 
@@ -19,15 +19,16 @@
 
     }
     .content {
-        width: 100%;
-
-        grid-template-columns: 1fr;
-        grid-template-rows:  1fr repeat(3, 148px) repeat(3,242px);
+        min-width: auto;
+        
+        grid-template-columns: 450px;
+        grid-template-rows:  1fr 1fr repeat(7, minmax (240px, 1fr));
         grid-template-areas:
         'headerbar'
+        'headerbar'
         'card'
-        'card'
-        'card'
+        '.'
+        '.'
         'graphic'
         'gistogram'
         'diagram'
@@ -37,13 +38,12 @@
         padding: 2px;
         align-items: center;
         
-        
-        
         ;
     }
     .nav{
         display: none;
     }
+    .headerbar,
     .card,
     .graphic,
     .gistogram,
@@ -51,15 +51,14 @@
     .geo {
         grid-column: span 1;
         grid-row: span 1;
-        width: 370px;
+    
     }
 
 
     .hederbar{
-        
-    display: grid;
-    justify-content: center;
-    
+
+        flex-direction: column;
+
     }
     .username{
        
@@ -71,10 +70,6 @@
 
         overflow-x: auto;
 
-    }
-    .diagram{
-        grid-template-columns: 337px 1fr;
-        grid-template-rows: 30px 1fr;
     }
 
 }

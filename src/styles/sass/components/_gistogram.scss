@@ -12,33 +12,34 @@
     ;
     padding: 20px;
     grid-gap: 10px;
-}
 
-.gistogram__title{
-    grid-area: gistogram-title;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 24px;
-    color: #4F4F4F;
-}
 
-.gistogram__view{
-    grid-area: gistogram-view;
-    grid-row: span 2;
-    margin-top: 15px;
-    align-content: center;
-    width: 136px;
-    height: 121px;
-}
+    &__title{
+        grid-area: gistogram-title;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #4F4F4F;
+    }
 
-.gistogram__desktop{
-    grid-area: gistogram-desktop;
-    margin-top: 20px;
-    width: 78px;
-    height: 16px;
-}
-.gistogram__mobile{
-    grid-area: gistogram-mobile;
-    width: 120px;
-    height: 16px;
+    &__view{
+        grid-area: gistogram-view;
+        grid-row: span 2;
+        margin-top: 15px;
+        align-content: center;
+        width: 136px;
+        height: 121px;
+    }
+
+    &__desktop{
+        grid-area: gistogram-desktop;
+        margin-top: 20px;
+        width: 78px;
+        height: 16px;
+    }
+    &__mobile{
+        grid-area: gistogram-mobile;
+        width: 120px;
+        height: 16px;
+    }
 }
